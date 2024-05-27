@@ -39,4 +39,7 @@ C:\Users\owner>aws s3 rm s3://mmfvugjujccffmm/mkjjkk
 aws s3 rb s3://bucketname
 C:\Users\owner>aws s3 rm s3://mmfvugjujccffmm/mkjjkk
 
+6.To remove buckets and folders/files(removes all bucket and folders and files inside)
+aws s3 rm s3://bucketname/ --recursive
+
 
