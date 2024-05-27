@@ -1,0 +1,42 @@
+# How to set up CLI for AWS
+from cmd enter below commands
+1. aws
+2.aws configure
+4.Enter access key
+5.Enter security key
+6.Default region name: N/A
+7.Default output format:N/A
+=========================
+command to check the list of buckets in s3
+aws s3 ls
+
+
+aws s3 help
+# some important commands under s3:
+1.listing objects and folders - ls
+2.copying files - we can use cp to copy files from local system to s3,s3 to the local file system as well as s3 to s3
+3.moving objects or folders - mv
+4. deleting objects or folders - rm
+5.creating bucket - mb
+6.removing bucketer in bucket and co - rb
+
+
+1.creating bucket - mb
+aws s3 mb s3://mmfvugjujccffmm --region us-east-1
+
+2.creating folder in bucket and copying files from local to aws
+aws s3 cp localpath s3://bucket/folder
+aws s3 cp C:\Users\owner\Downloads\retail_db-master\retail_db-master\customers\categories\part-00000 s3://mmfvugjujccffmm/mkjjkk
+
+3.To list files folders/files in bucket
+aws s3 ls buckectname
+
+4.To remove files/folders in a bucket
+aws s3 rm s3://bucketname/foldername or file name
+C:\Users\owner>aws s3 rm s3://mmfvugjujccffmm/mkjjkk
+
+5.To remove bucket(IMP POINT TO REMEMBER:To remove a bucket the bucket has to empty)
+aws s3 rb s3://bucketname
+C:\Users\owner>aws s3 rm s3://mmfvugjujccffmm/mkjjkk
+
+
